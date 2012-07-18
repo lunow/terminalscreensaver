@@ -1,30 +1,30 @@
 The TerminalScreensaver for OSX
 ===============================
 
-This is the a very small working demo for a nice looking "Terminal Screeensaver". And its easy extendeable.
+This is a very small working demo for my nice looking "Terminal Screensaver".
 
-The screensaver is build with the WebviewScreensaver (https://github.com/liquidx/webviewscreensaver) developed by liquidx.
+The screensaver is built with the [WebviewScreensaver](https://github.com/liquidx/webviewscreensaver) developed by liquidx.
 
 
 Demo
 ----
-You find the Demo here: [http://lunow.github.com/terminalscreensaver/](http://lunow.github.com/terminalscreensaver/)
+You find the demo here: [http://lunow.github.com/terminalscreensaver/](http://lunow.github.com/terminalscreensaver/)
 
 
 
 Download
 --------
-Download the *TerminalScreenSaver.saver* from this repository and add it by double click. Done!
+Download the *TerminalScreenSaver.saver* from this repository and add it by double clicking. Done!
 
 
 Working
 -------
-Its just a simple jQuery App printing div by div to the screen. The content for the div containers are provided by plugins.
+It's just a simple jQuery App printing div by div to the screen. The content of the divs is provided by plugins.
 
 
-Building the simplest plugin
+Build a simple plugin
 ----------------------------
-The simplest way is prompting a number of lines to the screen. Its integreated in ten seconds:
+The simplest way is prompting a number of lines on the screen. It's integrated in ten seconds:
 
 	var myProcess = function() {
 		var lines = [];
@@ -33,7 +33,7 @@ The simplest way is prompting a number of lines to the screen. Its integreated i
 		return BaseProcess(lines);
 	}
 
-`BaseProcess` is a class serves the Plugin inteface for you. As second paramter you can provide an integer value for the speed in milliseconds.
+`BaseProcess` is an object that provides the Plugin interface for you. As second parameter you can provide an integer value for the speed in milliseconds.
 
 Next and last step is adding the plugin to the terminal:
 
@@ -41,13 +41,13 @@ Next and last step is adding the plugin to the terminal:
 	app.addPlugin(myProcess, 20);
 	app.start();
 
-`addPlugin` adds the plugin. Second parameter is for controling the frequency.
+`addPlugin` adds the plugin. Second parameter is for controlling the frequency.
 
 
 Build a more complex plugin
 ---------------------------
 
-If you need more than a few lines, in fact replace the last line, you can build a complete new plugin. This is the template:
+If you need more than a few lines, in fact you want to replace the last line, you can build a completly new plugin. This is the template:
 
 	/*
 	 * Plugin Template Title
@@ -82,15 +82,16 @@ If you need more than a few lines, in fact replace the last line, you can build 
 
 Its important to return a Deferred Object in the `run` function! Everything else is commented and easy to understand.
 
-*If you have build a plugin, please send me an pull request, so everybody can see it!*
+*If you have built a plugin, please send me a pull request, so everybody can see it!*
 
 
 Todos
 -----
-This is only a very simple and fast demo. There are a few things to do:
+This is only a very simple and short demo. There are a few things to do:
 
 - build some cool or funny plugins
 - publish the screensaver x code project
 - remove the unused lines from screen after a while
 - make the terminal faster
-- possiblity to replace more then one line
+- possiblity to replace more than one line
+- themes support
