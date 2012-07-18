@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>The Terminal</title>
-		
 		<script src="https://raw.github.com/lunow/terminalscreensaver/master/js/jquery.min.js"></script>
 		<script src="https://raw.github.com/lunow/terminalscreensaver/master/js/underscore.js"></script>
 		<script>
@@ -35,8 +34,22 @@
 				app.start();
 			});
 		</script>
-		<link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://raw.github.com/lunow/terminalscreensaver/master/css/terminal.css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+		<style>
+			html, body {
+				margin:0;
+				padding:0;
+				font-family:'Ubuntu Mono', "Courier New", Courier, monospace;
+				font-size:12px;
+				line-height:100%;
+				background:#fff;
+				color:#000;
+			}
+			.ln {
+				display:block;
+				padding:2px;
+			}
+			</style>
 	</head>
 	<body>
 		
