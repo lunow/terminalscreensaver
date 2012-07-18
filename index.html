@@ -3,21 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<title>The Terminal</title>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/underscore.js"></script>
+		<script src="https://raw.github.com/lunow/terminalscreensaver/master/js/jquery.min.js"></script>
+		<script src="https://raw.github.com/lunow/terminalscreensaver/master/js/underscore.js"></script>
 		<script>
 			//everybody needs random numbers
 			var rand = function(min, max) {
 				return Math.floor(Math.random() * (max - min + 1)) + min;
 			};
 		</script>
-		<script src="js/baseprocess.js"></script>
-		<script src="plugins/processes.js"></script>
-		<script src="plugins/thewave.js"></script>
-		<script src="plugins/simpleline.js"></script>
-		<script src="plugins/simplecounter.js"></script>
-		<script src="plugins/loadingbar.js"></script>
-		<script src="js/terminal.js"></script>
+		<script src="https://raw.github.com/lunow/terminalscreensaver/master/js/baseprocess.js"></script>
+		<script src="https://raw.github.com/lunow/terminalscreensaver/master/plugins/processes.js"></script>
+		<script src="https://raw.github.com/lunow/terminalscreensaver/master/plugins/thewave.js"></script>
+		<script src="https://raw.github.com/lunow/terminalscreensaver/master/plugins/simpleline.js"></script>
+		<script src="https://raw.github.com/lunow/terminalscreensaver/master/plugins/simplecounter.js"></script>
+		<script src="https://raw.github.com/lunow/terminalscreensaver/master/plugins/loadingbar.js"></script>
+		<script src="https://raw.github.com/lunow/terminalscreensaver/master/js/terminal.js"></script>
 		<script>
 			//now we have the terminal and a few plugins, so initialise it:
 			var app;
@@ -35,7 +35,21 @@
 			});
 		</script>
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/terminal.css">
+		<style>
+			html, body {
+				margin:0;
+				padding:0;
+				font-family:'Ubuntu Mono', "Courier New", Courier, monospace;
+				font-size:12px;
+				line-height:100%;
+				background:#fff;
+				color:#000;
+			}
+			.ln {
+				display:block;
+				padding:2px;
+			}
+			</style>
 	</head>
 	<body>
 		
