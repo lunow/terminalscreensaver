@@ -8,7 +8,7 @@ The screensaver is built with the [WebviewScreensaver](https://github.com/liquid
 
 Demo
 ----
-You find the demo here: [http://lunow.github.com/terminalscreensaver/](http://lunow.github.com/terminalscreensaver/)
+You find the demo here: [http://lunow.github.com/terminalscreensaver/demo.html](http://lunow.github.com/terminalscreensaver/demo.html)
 
 
 
