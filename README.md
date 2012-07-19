@@ -14,7 +14,7 @@ You find the demo here: [http://lunow.github.com/terminalscreensaver/](http://lu
 
 Download
 --------
-Download the *TerminalScreenSaver.saver* from this repository and add it by double clicking. Done!
+Download the [TerminalScreenSaver.saver](https://github.com/lunow/terminalscreensaver/zipball/master) from this repository and add it by double clicking. Done!
 
 
 Working
