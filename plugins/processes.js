@@ -64,6 +64,16 @@ var GitProcess = function() {
 	return BaseProcess(lines);
 };
 
+var Git2Process = function() {
+	var lines = [];
+	lines.push('MacBook-Pro:terminalscreensaver paul$ subl .');
+	lines.push('MacBook-Pro:terminalscreensaver paul$ git add .');
+	lines.push('MacBook-Pro:terminalscreensaver paul$ git commit -m "updated processes"');
+	lines.push('[master 452f0fe] updated processes');
+	lines.push(' 1 files changed, 14 insertions(+), 14 deletions(-)');
+	return BaseProcess(lines);
+};
+
 var LsProcess = function() {
 	var lines = [];
 	lines.push("-r-xr-xr-x     1 root   wheel     82688  8 Okt  2011 tconf");
