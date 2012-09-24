@@ -1,5 +1,5 @@
 /*
- * 	Four processes for having some output.
+ * 	Four processes for having local output.
  *	They use js/baseprocess
  */
 
@@ -8,30 +8,30 @@ var MavenProcess = function() {
 	var lines = [];
 	lines.push("[INFO] Scanning for projects...");
 	lines.push("[WARNING] ");
-	lines.push("[WARNING] Some problems were encountered while building the effective model for com.socialmeme:some:pom:0.1-SNAPSHOT");
+	lines.push("[WARNING] local problems were encountered while building the effective model for com.greatapp:local:pom:0.1-SNAPSHOT");
 	lines.push("[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.phpmaven:maven-php-plugin @ org.phpmaven:php-parent-pom:2.0-SNAPSHOT, /Users/paul/.m2/repository/org/phpmaven/php-parent-pom/2.0-SNAPSHOT/php-parent-pom-2.0-SNAPSHOT.pom, line 114, column 25");
 	lines.push("[WARNING] ");
 	lines.push("[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.");
 	lines.push("[WARNING] ");
 	lines.push("[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.");
 	lines.push("[WARNING] ");
-	lines.push("[INFO] Building jar: /Users/paul/Projekte/mediametrics/some/frontend/target/frontend-0.1-SNAPSHOT.jar");
+	lines.push("[INFO] Building jar: /Users/paul/Projekte/revolverapp/local/frontend/target/frontend-0.1-SNAPSHOT.jar");
 	lines.push("[INFO] ");
 	lines.push("[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ frontend ---");
-	lines.push("[INFO] Installing /Users/paul/Projekte/mediametrics/some/frontend/target/frontend-0.1-SNAPSHOT.jar to /Users/paul/.m2/repository/com/socialmeme/some/frontend/0.1-SNAPSHOT/frontend-0.1-SNAPSHOT.jar");
-	lines.push("[INFO] Installing /Users/paul/Projekte/mediametrics/some/frontend/pom.xml to /Users/paul/.m2/repository/com/socialmeme/some/frontend/0.1-SNAPSHOT/frontend-0.1-SNAPSHOT.pom");
+	lines.push("[INFO] Installing /Users/paul/Projekte/revolverapp/local/frontend/target/frontend-0.1-SNAPSHOT.jar to /Users/paul/.m2/repository/com/greatapp/local/frontend/0.1-SNAPSHOT/frontend-0.1-SNAPSHOT.jar");
+	lines.push("[INFO] Installing /Users/paul/Projekte/revolverapp/local/frontend/pom.xml to /Users/paul/.m2/repository/com/greatapp/local/frontend/0.1-SNAPSHOT/frontend-0.1-SNAPSHOT.pom");
 	lines.push("[INFO] ------------------------------------------------------------------------");
 	lines.push("[INFO] Reactor Summary:");
 	lines.push("[INFO] ");
-	lines.push("[INFO] Some - A webfrontend for the socialMeme API ....... SUCCESS [0.365s]");
-	lines.push("[INFO] PHP Mailer - Wrapper for PHPMailer 5.1 ............ SUCCESS [4.185s]");
-	lines.push("[INFO] Some Backend - Webserver adapting to api .......... SUCCESS [8.271s]");
-	lines.push("[INFO] Some frontend - The web rich client project ....... SUCCESS [12.186s]");
+	lines.push("[INFO] GREAT - A webfrontend for the revolverAPP API ....... SUCCESS [0.365s]");
+	lines.push("[INFO] PHP Mailer - Wrapper for PHPMailer 5.1 .............. SUCCESS [4.185s]");
+	lines.push("[INFO] GREAT Backend - Webserver adapting to api ........... SUCCESS [8.271s]");
+	lines.push("[INFO] GREAT frontend - The web rich client project ........ SUCCESS [12.186s]");
 	lines.push("[INFO] ------------------------------------------------------------------------");
 	lines.push("[INFO] BUILD SUCCESS");
 	lines.push("[INFO] ------------------------------------------------------------------------");
 	lines.push("[INFO] Total time: 26.515s");
-	lines.push("[INFO] Finished at: Fri Jul 13 10:54:08 CEST 2012");
+	lines.push("[INFO] Finished at: Fri Sep 24 10:54:08 CEST 2012");
 	lines.push("[INFO] Final Memory: 16M/265M");
 	lines.push("[INFO] ------------------------------------------------------------------------");
 	return BaseProcess(lines);
@@ -43,7 +43,7 @@ var GitProcess = function() {
 	lines.push("remote: Compressing objects: 100% (19/19), done.");
 	lines.push("remote: Total 19 (delta 12), reused 0 (delta 0)");
 	lines.push("Unpacking objects: 100% (19/19), done.");
-	lines.push("From ssh://mediametrics-git/some");
+	lines.push("From ssh://revolverapp-git/great");
 	lines.push("   754d496..f649e03  master     -> origin/master");
 	lines.push("Merge made by the 'recursive' strategy.");
 	lines.push(" .../src/main/js/components/elements/post/post.html |   58 ++++++++---");
@@ -53,13 +53,13 @@ var GitProcess = function() {
 	lines.push(" .../js/components/pages/analyse/sentiments.html    |   14 +---");
 	lines.push(" frontend/src/main/resources/css/style.css          |  107 ++++++++++++++-----");
 	lines.push(" 6 files changed, 156 insertions(+), 71 deletions(-)");
-	lines.push("Pauls-MacBook-Pro:some paul$ git push");
+	lines.push("Pauls-MacBook-Pro:love paul$ git push");
 	lines.push("Counting objects: 53, done.");
 	lines.push("Delta compression using up to 8 threads.");
 	lines.push("Compressing objects: 100% (28/28), done.");
 	lines.push("Writing objects: 100% (28/28), 8.68 KiB, done.");
 	lines.push("Total 28 (delta 15), reused 0 (delta 0)");
-	lines.push("To ssh://mediametrics-git/some");
+	lines.push("To ssh://thegreatapp-git/love");
 	lines.push("   f649e03..9ebaca5  master -> master");
 	return BaseProcess(lines);
 };
@@ -227,7 +227,7 @@ var LsProcess = function() {
 
 var TestProcess = function() {
 	var lines = [];
-	lines.push("Running: java -classpath /Users/paul/.m2/repository/com/googlecode/jstd-maven-plugin/jstd-maven-plugin/1.3.2.7-SNAPSHOT/jstd-maven-plugin-1.3.2.7-SNAPSHOT.jar;/Users/paul/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar;/Users/paul/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar;/Users/paul/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.0-beta-3.0.1/plexus-component-annotations-1.0-beta-3.0.1.jar;/Users/paul/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar;/Users/paul/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar;/Users/paul/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar;/Users/paul/.m2/repository/com/google/code/google-collections/google-collect/snapshot-20080530/google-collect-snapshot-20080530.jar;/Users/paul/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar;/Users/paul/.m2/repository/org/apache/maven/artifact/maven-artifact/3.0-alpha-1/maven-artifact-3.0-alpha-1.jar;/Users/paul/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar;/Users/paul/.m2/repository/aspectj/aspectjrt/1.5.3/aspectjrt-1.5.3.jar;/Users/paul/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar;/Users/paul/.m2/repository/org/codehaus/woodstox/wstx-asl/3.2.6/wstx-asl-3.2.6.jar;/Users/paul/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar;/Users/paul/.m2/repository/org/sonatype/spice/model-builder/1.0/model-builder-1.0.jar;/Users/paul/.m2/repository/org/apache/maven/maven-project-builder/3.0-alpha-1/maven-project-builder-3.0-alpha-1.jar -jar /Users/paul/.m2/repository/com/google/jstestdriver/jstestdriver/1.3.4.b-SNAPSHOT/jstestdriver-1.3.4.b-SNAPSHOT.jar --basePath /Users/paul/Projekte/mediametrics/some/frontend --browser /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --captureConsole --config /Users/paul/Projekte/mediametrics/some/frontend/src/test/resources/jsTestDriver.conf --port 42242 --tests all --verbose");
+	lines.push("Running: java -classpath /Users/paul/.m2/repository/com/googlecode/jstd-maven-plugin/jstd-maven-plugin/1.3.2.7-SNAPSHOT/jstd-maven-plugin-1.3.2.7-SNAPSHOT.jar;/Users/paul/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar;/Users/paul/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar;/Users/paul/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.0-beta-3.0.1/plexus-component-annotations-1.0-beta-3.0.1.jar;/Users/paul/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar;/Users/paul/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar;/Users/paul/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar;/Users/paul/.m2/repository/com/google/code/google-collections/google-collect/snapshot-20080530/google-collect-snapshot-20080530.jar;/Users/paul/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar;/Users/paul/.m2/repository/org/apache/maven/artifact/maven-artifact/3.0-alpha-1/maven-artifact-3.0-alpha-1.jar;/Users/paul/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar;/Users/paul/.m2/repository/aspectj/aspectjrt/1.5.3/aspectjrt-1.5.3.jar;/Users/paul/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar;/Users/paul/.m2/repository/org/codehaus/woodstox/wstx-asl/3.2.6/wstx-asl-3.2.6.jar;/Users/paul/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar;/Users/paul/.m2/repository/org/sonatype/spice/model-builder/1.0/model-builder-1.0.jar;/Users/paul/.m2/repository/org/apache/maven/maven-project-builder/3.0-alpha-1/maven-project-builder-3.0-alpha-1.jar -jar /Users/paul/.m2/repository/com/google/jstestdriver/jstestdriver/1.3.4.b-SNAPSHOT/jstestdriver-1.3.4.b-SNAPSHOT.jar --basePath /Users/paul/Projekte/revolverapp/love/frontend --browser /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --captureConsole --config /Users/paul/Projekte/revolverapp/local/frontend/src/test/resources/jsTestDriver.conf --port 42242 --tests all --verbose");
 	lines.push("Chrome 20.0.1132.57 Mac OS [PASSED] JstdInitTest.testBasicLoad2");
 	lines.push("Chrome 20.0.1132.57 Mac OS [PASSED] EventTests.test events");
 	lines.push("Chrome 20.0.1132.57 Mac OS [PASSED] EventTests.test bind an callback to an action");
